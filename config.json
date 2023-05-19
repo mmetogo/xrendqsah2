@@ -21,15 +21,15 @@
                         "dest": 3001
                     },
                     {
-                        "path": "/vless-411bf0d9-7ee0-4e41-b597-9391dd05aa93",
+                        "path": "/vless",
                         "dest": 3002
                     },
                     {
-                        "path": "/vmess-411bf0d9-7ee0-4e41-b597-9391dd05aa93",
+                        "path": "/vmess",
                         "dest": 3003
                     },
                     {
-                        "path": "/trojan-411bf0d9-7ee0-4e41-b597-9391dd05aa93",
+                        "path": "/trojan",
                         "dest": 3004
                     },
                     {
@@ -76,7 +76,7 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/vless-411bf0d9-7ee0-4e41-b597-9391dd05aa93"
+                    "path": "/vless"
                 }
             },
             "sniffing": {
@@ -104,11 +104,11 @@
             "streamSettings": {
                 "network": "ws",
                 "wsSettings": {
-                    "path": "/vmess-411bf0d9-7ee0-4e41-b597-9391dd05aa93"
+                    "path": "/vmess"
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls",
@@ -132,14 +132,12 @@
                 "network": "ws",
                 "security": "none",
                 "wsSettings": {
-                    "path": "/trojan-411bf0d9-7ee0-4e41-b597-9391dd05aa93"
+                    "path": "/trojan"
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
-                    "http",
-                    "tls",
                     "quic"
                 ],
                 "metadataOnly": false
@@ -165,10 +163,8 @@
                 }
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
-                    "http",
-                    "tls",
                     "quic"
                 ],
                 "metadataOnly": false
